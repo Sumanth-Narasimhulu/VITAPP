@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITAPP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="banner.png">
+</head>
+<style>
+    /* *{
+        background-color: black;
+    } */
+    body {
+        background-color: black;
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .navbar .nav-link:active {
+        color: blueviolet;
+    }
+
+    /* Add your custom styles here */
+
+    .vitapp-text {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+        position: relative;
+        display: inline-block;
+
+        /* text-shadow: -5px -5px 0 #ff00ff, -10px -10px 0 #cc00cc, -15px -15px 0 #990099, -20px -20px 0 #660066; */
+        /* transform: perspective(30px) rotateX(20deg) rotateY(-30deg); */
+    }
+    .nav-link:active,
+.nav-link.active {
+  color: blueviolet; /* Set the color for the active link */
+}
+
+    /* .vitapp-text::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  right: -5px;
+  bottom: 5px;
+  z-index: -1;
+  background-color: #ff00ff;
+  transform: skewX(-20deg);
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.5 blueviolet);
+} */
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="./logo.png" alt="" srcset="" class="img-fluid"
+                    style="height:26px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <!-- <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li> -->
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li> &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">About</a>
+                        </li>&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Schedule</a>
+                        </li>&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Team</a>
+                        </li>&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Sponsors</a>
+                        </li>&nbsp;&nbsp;
+                        <li class="nav-item">
+                            <button class="btn rounded-5 text-light text-center btn-sm " data-bs-toggle="modal"
+                                data-bs-target="#grab_tickets_model"
+                                style="background-color: blueviolet; margin-top: 6px;">
+                                Grab Tickets
+
+                            </button>
+                        </li> &nbsp;
+                        <!-- <li class="nav-item">
+                <button class="btn rounded-5 text-light text-center btn-sm" style="background-color: blueviolet; margin-top: 6px;">
+                    Login
+
+                </button>
+              </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- grab tickets modal -->
+    <div class="modal fade   " id="grab_tickets_model">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title ">
+                        Grab Your Tickets here!
+
+                    </h2>
+                    <button class="btn btn-close " data-bs-dismiss="modal">
+
+                    </button>
+
+
+                </div>
+                <div class="modal-body">
+                    <div class="card h1-100">
+                        <div class="card-body">
+                            <form action="" name="tickets">
+                                <div class="mb-3 mt-3">
+                                    <label for="fname" class="form-label">First Name:</label>
+                                    <input type="text" class="form-control " id="fname" placeholder="Enter First Name"
+                                        name="fname">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lname" class="form-label">Last Name:</label>
+                                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                        name="lname">
+
+
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">
+                                        Email
+                                    </label>
+                                    <input type="text" name="email" id="email" class="form-control"
+                                        placeholder="Enter email">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="regno" class="form-label">
+                                        Registration Number
+                                    </label>
+                                    <input type="text" name="regno" id="regno" class="form-control"
+                                        placeholder="Enter Registration Number">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="event" class="form-label">
+                                        Select Your Event
+                                    </label>
+                                    <select name="tickets" id="event" class="form-control">
+                                        <option value="" class="">***Choose***</option>
+                                        <option value="vtopia" class="">
+                                            VTOPIA
+                                        </option>
+                                        <option value="ideathon" class="">Ideathon</option>
+                                        <option value="Web APP" class="">Web App</option>
+                                    </select>
+
+                                </div>
+                            </form>
+
+                            <div class="card-footer d-grid">
+                                <button class="btn rounded-5" style="background-color: blueviolet; color: #fff;">
+                                    Proceed to Payment
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- banner -->
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8 image-container text-center">
+                <div style="margin-top: 100px;">
+                    <div>
+                        <img src="./banner1.png" alt="" srcset="" class="img-fluid"
+                            style="  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(141, 12, 158, 0.5)); box-shadow: 100px 10px 349730px 00px blueviolet;">
+                            <br> <br>
+                            <h3 class="text-light">
+                                International Tech Fest <br>
+                                <span>December 10 & 11</span>
+                            </h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2">
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="container-fluid text-dark bg-light mt-5 p-3">
+        <div class="header ">
+            <h1 class="text-center">
+                ABOUT <span style="color: blueviolet;">VTAPP</span>
+            </h1>
+        </div>
+        <div class="p-4">
+            <p>
+                Welcome to VTAPP 2022! VIT AP University’s annual technical fest is back with a bang! Join us in
+                celebrating innovation, knowledge, technology, and diversity through a multitude of events which will
+                give students a platform to showcase their learning and demonstrate their technical skills. This year’s
+                theme is “The Matrix”. Much like how the body, the mind and the brain sync together to reflect power,
+                individuality, and humanity in the matrix, at VTAPP, infrastructural facilities, students and ideas will
+                come together to create magic.</p>
+            <p>Embark on an experiential journey as we discover our potential and infinite opportunities in engineering.
+                With over 70+ events, workshops, activity stalls and tech shows as well as a prize pool of upto 20 lakh
+                rupees, VTAPP is all set to become one of the biggest confluence of students in the region.</p>
+            <br>
+            <p>Mark your calendars and pack your bags to join us as we celebrate technology!</p>
+            <p><b>When : 10-11 December 2022</b></p>
+            <p><b>Where: VIT-AP University, Amaravati, Andhra Pradesh</b></p>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="container-fluid mt-3">
+
+        <div class="row g-4">
+            <div class="header text-center mt-3">
+                <h1 class="text-light">
+                    Events
+
+
+                </h1>
+
+
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+
+
+            <div class="col-sm-5">
+                <div class="card text-bg-dark h-100 rounded-4 border p-1">
+                    <div class="card-img-top">
+                        <div class="ratio ratio-16x9">
+                            <img src="./card1.png" alt="card1" srcset="" class="img-fluid rounded-5 p-2">
+
+                        </div>
+
+                    </div>
+                    <div class="card-header">
+                        <h2>VTAPP DESIGNATHON 2K22</h2>
+
+                    </div>
+                    <div class="card-body">
+                        Workshop on User Interface and User Experience (UI/UX) & Design models
+                        <br>
+
+                        <span>
+                            <button class="btn  text-light mt-3 " style="
+                                
+                                    border-bottom-color:#fff;
+                                    border-top-color: blueviolet; border-left-color:#fff ;
+                                    border-right-color: blueviolet;">
+                                CSI Chapter
+
+                            </button> &nbsp;
+                            <button class="btn  text-light mt-3 " style="
+                                
+                                    border-bottom-color:#fff;
+                                    border-top-color: blueviolet; border-left-color:#fff ;
+                                    border-right-color: blueviolet;">
+                                Workshop
+
+                            </button </span>
+                            <br>
+                            <br>
+                            <h5>Entry Fee - &#8377;100</h5>
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-lg rounded-5 text-light " style="background-color: blueviolet;">
+                            Register Now
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="col-sm-5">
+                <div class="card text-bg-dark h-100 rounded-4 border p-1">
+                    <div class="card-img-top">
+                        <div class="ratio ratio-16x9">
+                            <img src="./card1.png" alt="card1" srcset="" class="img-fluid rounded-5 p-2">
+
+                        </div>
+
+                    </div>
+                    <div class="card-header">
+                        <h2>VTAPP DESIGNATHON 2K22</h2>
+
+                    </div>
+                    <div class="card-body">
+                        Workshop on User Interface and User Experience (UI/UX) & Design models
+                        <br>
+
+                        <span>
+                            <button class="btn  text-light mt-3 " style="
+                                
+                                    border-bottom-color:#fff;
+                                    border-top-color: blueviolet; border-left-color:#fff ;
+                                    border-right-color: blueviolet;">
+                                CSI Chapter
+
+                            </button> &nbsp;
+                            <button class="btn  text-light mt-3 " style="
+                                
+                                    border-bottom-color:#fff;
+                                    border-top-color: blueviolet; border-left-color:#fff ;
+                                    border-right-color: blueviolet;">
+                                Workshop
+
+                            </button </span>
+                            <br>
+                            <br>
+                            <h5>Entry Fee - &#8377;100</h5>
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-lg rounded-5 text-light " style="background-color: blueviolet;">
+                            Register Now
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-sm-1 ">
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="row g-4">
+            <div class="col mt-5">
+                <div class="text-center">
+                    <button class="btn text-light rounded-5 " style="background-color: blueviolet;">
+                       <a href="events.html" style="text-decoration: none;color: #fff;"> Explore Events</a>
+
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid text-dark bg-light mt-5">
+       
+
+        <div class="row g-4">
+            <div class="headinig text-center mt-3">
+                <h1>
+                    <b>T-SHIRTS</b>
+                </h1>
+    
+            </div>
+
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-5">
+                <div class="card  h-100 rounded-4 border p-1">
+                    <div class="card-img-top">
+                        <div class="ratio ratio-16x9">
+                            <img src="./tshirt1.png" alt="card1" srcset="" class="img-fluid rounded-5 p-2">
+
+                        </div>
+
+                    </div>
+                    <div class="card-header">
+                        <h2>Collared T-shirt</h2>
+
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-lg rounded-5 text-light " style="background-color: blueviolet;">
+                            Order Now
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="col-sm-5">
+                <div class="card  h-100 rounded-4 border p-1">
+                    <div class="card-img-top">
+                        <div class="ratio ratio-16x9">
+                            <img src="./card1.png" alt="card1" srcset="" class="img-fluid rounded-5 p-2">
+
+                        </div>
+
+                    </div>
+                    <div class="card-header">
+                        <h2>Hoodie</h2>
+
+                    </div>
+                    <div class="card-body">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vitae facere ducimus ut illo autem aliquam consequatur ratione magnam ex vel! Veniam deleniti ducimus, dolorum facilis corrupti iure? Sed, iste.
+                        
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-lg rounded-5 text-light " style="background-color: blueviolet;">
+                            Order Now
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid text-light text-center mt-3">
+        <div class="row g-4">
+            <div class="col-sm-4">
+                <h2>
+                    <img src="./vitlogo.png" alt="logo" class="img-fluid">
+                </h2>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="header ">
+                    <h3>
+                        Contacts
+                    </h3>
+
+
+                </div>
+                <a href="#" style="color: blueviolet;">QR Scan</a><br>
+                Phone: <a href="#" style="color: blueviolet; text-decoration: none;">850-123-5021</a><br>
+                Email: <a href="#" style="color: blueviolet; text-decoration: none;">vitap.convenor@vitap.ac.in</a><br>
+                Address: <a href="#" style="color: blueviolet; text-decoration: none;">VIT-AP University , Amaravati</a>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="header">
+                    <h3>
+                        Social
+                    </h3>
+                    <i class="fa fa-instagram"></i> &nbsp;
+                    <i class="fa fa-twitter"></i>&nbsp;
+                    <i class="fa fa-whatsapp"></i>&nbsp;
+                    <i class="fa fa-facebook-square"></i>
+                    <br><br>
+                    <p>Check out our social media handles for more information & latest updates</p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

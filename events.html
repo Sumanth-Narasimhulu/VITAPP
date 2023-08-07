@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VITAPP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+        background-color: black;
+    }
+    .nav-link {
+        color: #fff;
+    }
+
+    .navbar .nav-link:active {
+        color: blueviolet;
+    }
+  
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./logo.png" alt="" srcset="" class="img-fluid"
+                    style="height:26px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <!-- <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li> -->
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li> &nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">About</a>
+                        </li>&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Schedule</a>
+                        </li>&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Team</a>
+                        </li>&nbsp;
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Sponsors</a>
+                        </li>&nbsp;&nbsp;
+                        <li class="nav-item">
+                            <button class="btn rounded-5 text-light text-center btn-sm " data-bs-toggle="modal"
+                                data-bs-target="#grab_tickets_model"
+                                style="background-color: blueviolet; margin-top: 6px;">
+                                Grab Tickets
+
+                            </button>
+                        </li> &nbsp;
+                        <!-- <li class="nav-item">
+                <button class="btn rounded-5 text-light text-center btn-sm" style="background-color: blueviolet; margin-top: 6px;">
+                    Login
+
+                </button>
+              </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade   " id="grab_tickets_model">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title ">
+                        Grab Your Tickets here!
+
+                    </h2>
+                    <button class="btn btn-close " data-bs-dismiss="modal">
+
+                    </button>
+
+
+                </div>
+                <div class="modal-body">
+                    <div class="card h1-100">
+                        <div class="card-body">
+                            <form action="" name="tickets">
+                                <div class="mb-3 mt-3">
+                                    <label for="fname" class="form-label">First Name:</label>
+                                    <input type="text" class="form-control " id="fname" placeholder="Enter First Name"
+                                        name="fname">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lname" class="form-label">Last Name:</label>
+                                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                        name="lname">
+
+
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">
+                                        Email
+                                    </label>
+                                    <input type="text" name="email" id="email" class="form-control"
+                                        placeholder="Enter email">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="regno" class="form-label">
+                                        Registration Number
+                                    </label>
+                                    <input type="text" name="regno" id="regno" class="form-control"
+                                        placeholder="Enter Registration Number">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="event" class="form-label">
+                                        Select Your Event
+                                    </label>
+                                    <select name="tickets" id="event" class="form-control">
+                                        <option value="" class="">***Choose***</option>
+                                        <option value="vtopia" class="">
+                                            VTOPIA
+                                        </option>
+                                        <option value="ideathon" class="">Ideathon</option>
+                                        <option value="Web APP" class="">Web App</option>
+                                    </select>
+
+                                </div>
+                            </form>
+
+                            <div class="card-footer d-grid">
+                                <button class="btn rounded-5" style="background-color: blueviolet; color: #fff;">
+                                    Proceed to Payment
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid p-5">
+        <div class="row g-4">
+            <div class="col-8">
+                <div class="search-container">
+                    <label for="search-input" class="form-label text-light">Search Event: </label>
+                    <input type="text" id="search-input" placeholder="Enter event name" class="form-control  rounded-5  " >
+                </div> 
+
+            </div>
+            <div class="col-4">
+                <div class="sort-container">
+                    <label for="sort-select" class="form-label text-light">Sort by: </label>
+                    <select id="sort-select" class="form-control rounded-5">
+                        <option value="default">Default (No Sorting)</option>
+                        <option value="lowToHigh">Low to High</option>
+                        <option value="highToLow">High to Low</option>
+                        <option value="sortByName">Sort by Name</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        
+        
+        
+    </div>
+    <div class="container-fluid p-5">
+        <div class="header text-center text-light">
+            <h1>Events</h1>
+
+        </div>
+        <div class="row g-4 p-3" id="card-container">
+            <!-- Cards will be dynamically added here -->
+            
+            
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
+    <div class="container-fluid text-light text-center mt-3">
+        <div class="row g-4">
+            <div class="col-sm-4">
+                <h2>
+                    <img src="./vitlogo.png" alt="logo" class="img-fluid">
+                </h2>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="header ">
+                    <h3>
+                        Contacts
+                    </h3>
+
+
+                </div>
+                <a href="#" style="color: blueviolet;">QR Scan</a><br>
+                Phone: <a href="#" style="color: blueviolet; text-decoration: none;">850-123-5021</a><br>
+                Email: <a href="#" style="color: blueviolet; text-decoration: none;">vitap.convenor@vitap.ac.in</a><br>
+                Address: <a href="#" style="color: blueviolet; text-decoration: none;">VIT-AP University , Amaravati</a>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="header">
+                    <h3>
+                        Social
+                    </h3>
+                    <i class="fa fa-instagram"></i> &nbsp;
+                    <i class="fa fa-twitter"></i>&nbsp;
+                    <i class="fa fa-whatsapp"></i>&nbsp;
+                    <i class="fa fa-facebook-square"></i>
+                    <br><br>
+                    <p>Check out our social media handles for more information & latest updates</p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
