@@ -42,6 +42,29 @@
 .nav-link.active {
   color: blueviolet; /* Set the color for the active link */
 }
+.main{
+       
+       background-image: radial-gradient(#9747FE 10%,black 50%,black 50%);
+     height:800px;
+
+
+     
+            }
+            .pic{
+        padding-top:300px;
+       }
+
+
+        .centered-image {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+     
 
     /* .vitapp-text::before {
   content: '';
@@ -58,9 +81,12 @@
 </style>
 
 <body>
+    <div class="main">
+
+    
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:void(0)"><img src="./logo.png" alt="" srcset="" class="img-fluid"
+            <a class="navbar-brand" href="javascript:void(0)"><img src="logo.png" alt="" srcset="" class="img-fluid"
                     style="height:26px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -171,7 +197,7 @@
                                         Select Your Event
                                     </label>
                                     <select name="tickets" id="event" class="form-control">
-                                        <option value="" class="">***Choose***</option>
+                                        <option value="" class="">*Choose*</option>
                                         <option value="vtopia" class="">
                                             VTOPIA
                                         </option>
@@ -203,35 +229,37 @@
     </div>
 
     <!-- banner -->
-    <div class="container-fluid">
+    
 
-        <div class="row">
-            <div class="col-md-2">
+        <section >
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-md-1">
 
-            </div>
-            <div class="col-md-8 image-container text-center">
-                <div style="margin-top: 100px;">
-                    <div>
-                        <img src="./banner1.png" alt="" srcset="" class="img-fluid"
-                            style="  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(141, 12, 158, 0.5)); box-shadow: 100px 10px 349730px 00px blueviolet;">
-                            <br> <br>
-                            <h3 class="text-light">
-                                International Tech Fest <br>
-                                <span>December 10 & 11</span>
-                            </h3>
                     </div>
-                </div>
+                    <div class="col-md-10">
+                    
+                    <div class="container text-center text-light pic  ">
+                        <img src="banner1.png" alt srcset class="image-fluid" height="40px;" width="50%"><br>
+                        <p></p>
+                        <p></p>
+                        <p class="h2">International Tech Fest</p>
+                        <p class="h4">December 10 & 11</p>
+                    </div>
 
-            </div>
-            <div class="col-md-2">
+                    </div>
+                    <div class="col-md-1">
 
-            </div>
+                    </div>
 
-        </div>
+                
+        </section> 
 
 
 
-    </div>
+    
+
+</div>
 
     <div class="container-fluid text-dark bg-light mt-5 p-3">
         <div class="header ">
@@ -283,7 +311,7 @@
                 <div class="card text-bg-dark h-100 rounded-4 border p-1">
                     <div class="card-img-top">
                         <div class="ratio ratio-16x9">
-                            <img src="./card1.png" alt="card1" srcset="" class="img-fluid rounded-5 p-2">
+                            <img src="./card1.png" alt="card1" srcset="" class="img-fluid rounded-5 p-2 banner">
 
                         </div>
 
@@ -494,6 +522,7 @@
         </div>
 
     </div>
+    
 
 
     <div class="container-fluid text-light text-center mt-3">
