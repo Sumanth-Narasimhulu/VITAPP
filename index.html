@@ -38,33 +38,38 @@
         /* text-shadow: -5px -5px 0 #ff00ff, -10px -10px 0 #cc00cc, -15px -15px 0 #990099, -20px -20px 0 #660066; */
         /* transform: perspective(30px) rotateX(20deg) rotateY(-30deg); */
     }
+
     .nav-link:active,
-.nav-link.active {
-  color: blueviolet; /* Set the color for the active link */
-}
-.main{
-       
-       background-image: radial-gradient(#9747FE 10%,black 50%,black 50%);
-     height:800px;
+    .nav-link.active {
+        color: blueviolet;
+        /* Set the color for the active link */
+    }
+
+    .main {
+
+        background-image: radial-gradient(#9747FE 10%, black 50%, black 50%);
+        height: 800px;
 
 
-     
-            }
-            .pic{
-        padding-top:300px;
-       }
+
+    }
+
+    .pic {
+        padding-top: 300px;
+    }
+    
 
 
-        .centered-image {
-            max-width: 100%;
-            max-height: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-     
+    .centered-image {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
 
     /* .vitapp-text::before {
   content: '';
@@ -83,17 +88,17 @@
 <body>
     <div class="main">
 
-    
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:void(0)"><img src="logo.png" alt="" srcset="" class="img-fluid"
-                    style="height:26px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <!-- <li class="nav-item">
+
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)"><img src="logo.png" alt="" srcset="" class="img-fluid"
+                        style="height:26px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <!-- <li class="nav-item">
           <a class="nav-link" href="javascript:void(0)">Link</a>
         </li>
         <li class="nav-item">
@@ -102,117 +107,119 @@
         <li class="nav-item">
           <a class="nav-link" href="javascript:void(0)">Link</a>
         </li> -->
-                </ul>
-                <div class="d-flex">
-                    <ul class="navbar-nav me-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li> &nbsp;
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">About</a>
-                        </li>&nbsp;
-                        <li class="nav-item">
-                            <a class="nav-link" href="events.html">Events</a>
-                        </li>&nbsp;
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Schedule</a>
-                        </li>&nbsp;
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Team</a>
-                        </li>&nbsp;
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Sponsors</a>
-                        </li>&nbsp;&nbsp;
-                        <li class="nav-item">
-                            <button class="btn rounded-5 text-light text-center btn-sm " data-bs-toggle="modal"
-                                data-bs-target="#grab_tickets_model"
-                                style="background-color: blueviolet; margin-top: 6px;">
-                                Grab Tickets
+                    </ul>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li> &nbsp;
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">About</a>
+                            </li>&nbsp;
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>&nbsp;
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Schedule</a>
+                            </li>&nbsp;
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Team</a>
+                            </li>&nbsp;
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Sponsors</a>
+                            </li>&nbsp;&nbsp;
+                            <li class="nav-item">
+                                <button class="btn rounded-5 text-light text-center btn-sm " data-bs-toggle="modal"
+                                    data-bs-target="#grab_tickets_model"
+                                    style="background-color: blueviolet; margin-top: 6px;">
+                                    Grab Tickets
 
-                            </button>
-                        </li> &nbsp;
-                        <!-- <li class="nav-item">
+                                </button>
+                            </li> &nbsp;
+                            <!-- <li class="nav-item">
                 <button class="btn rounded-5 text-light text-center btn-sm" style="background-color: blueviolet; margin-top: 6px;">
                     Login
 
                 </button>
               </li> -->
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- grab tickets modal -->
-    <div class="modal fade   " id="grab_tickets_model">
-        <div class="modal-dialog ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title ">
-                        Grab Your Tickets here!
+        <!-- grab tickets modal -->
+        <div class="modal fade   " id="grab_tickets_model">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title ">
+                            Grab Your Tickets here!
 
-                    </h2>
-                    <button class="btn btn-close " data-bs-dismiss="modal">
+                        </h2>
+                        <button class="btn btn-close " data-bs-dismiss="modal">
 
-                    </button>
+                        </button>
 
 
-                </div>
-                <div class="modal-body">
-                    <div class="card h1-100">
-                        <div class="card-body">
-                            <form action="" name="tickets">
-                                <div class="mb-3 mt-3">
-                                    <label for="fname" class="form-label">First Name:</label>
-                                    <input type="text" class="form-control " id="fname" placeholder="Enter First Name"
-                                        name="fname">
+                    </div>
+                    <div class="modal-body">
+                        <div class="card h1-100">
+                            <div class="card-body">
+                                <form action="" name="tickets">
+                                    <div class="mb-3 mt-3">
+                                        <label for="fname" class="form-label">First Name:</label>
+                                        <input type="text" class="form-control " id="fname"
+                                            placeholder="Enter First Name" name="fname">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="lname" class="form-label">Last Name:</label>
+                                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                            name="lname">
+
+
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">
+                                            Email
+                                        </label>
+                                        <input type="text" name="email" id="email" class="form-control"
+                                            placeholder="Enter email">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="regno" class="form-label">
+                                            Registration Number
+                                        </label>
+                                        <input type="text" name="regno" id="regno" class="form-control"
+                                            placeholder="Enter Registration Number">
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="event" class="form-label">
+                                            Select Your Event
+                                        </label>
+                                        <select name="tickets" id="event" class="form-control">
+                                            <option value="" class="">*Choose*</option>
+                                            <option value="vtopia" class="">
+                                                VTOPIA
+                                            </option>
+                                            <option value="ideathon" class="">Ideathon</option>
+                                            <option value="Web APP" class="">Web App</option>
+                                        </select>
+
+                                    </div>
+                                </form>
+
+                                <div class="card-footer d-grid">
+                                    <button class="btn rounded-5" style="background-color: blueviolet; color: #fff;">
+                                        Proceed to Payment
+
+                                    </button>
 
                                 </div>
-                                <div class="mb-3">
-                                    <label for="lname" class="form-label">Last Name:</label>
-                                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
-                                        name="lname">
-
-
-
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">
-                                        Email
-                                    </label>
-                                    <input type="text" name="email" id="email" class="form-control"
-                                        placeholder="Enter email">
-
-                                </div>
-                                <div class="mb-3">
-                                    <label for="regno" class="form-label">
-                                        Registration Number
-                                    </label>
-                                    <input type="text" name="regno" id="regno" class="form-control"
-                                        placeholder="Enter Registration Number">
-
-                                </div>
-                                <div class="mb-3">
-                                    <label for="event" class="form-label">
-                                        Select Your Event
-                                    </label>
-                                    <select name="tickets" id="event" class="form-control">
-                                        <option value="" class="">*Choose*</option>
-                                        <option value="vtopia" class="">
-                                            VTOPIA
-                                        </option>
-                                        <option value="ideathon" class="">Ideathon</option>
-                                        <option value="Web APP" class="">Web App</option>
-                                    </select>
-
-                                </div>
-                            </form>
-
-                            <div class="card-footer d-grid">
-                                <button class="btn rounded-5" style="background-color: blueviolet; color: #fff;">
-                                    Proceed to Payment
-
-                                </button>
 
                             </div>
 
@@ -226,42 +233,44 @@
 
         </div>
 
-    </div>
+        <!-- banner -->
+        <!-- main banner page -->
 
-    <!-- banner -->
-    
 
-        <section >
+        <section>
             <div class="container-fluid">
                 <div class="row ">
                     <div class="col-md-1">
 
                     </div>
                     <div class="col-md-10">
-                    
-                    <div class="container text-center text-light pic  ">
-                        <img src="banner1.png" alt srcset class="image-fluid" height="40px;" width="50%"><br>
-                        <p></p>
-                        <p></p>
-                        <p class="h2">International Tech Fest</p>
-                        <p class="h4">December 10 & 11</p>
-                    </div>
+
+                        <div class="container text-center text-light pic  ">
+                            <img src="banner1.png" alt srcset class="image-fluid" height="40px;" width="50%"><br>
+                            <p></p>
+                            <p></p>
+                            <p class="h2">International Tech Fest</p>
+                            <p class="h4">December 10 & 11</p>
+                        </div>
 
                     </div>
                     <div class="col-md-1">
 
                     </div>
-
-                
-        </section> 
-
+                </div>
+            </div>
 
 
-    
+        </section>
 
-</div>
+
+
+
+
+    </div>
 
     <div class="container-fluid text-dark bg-light mt-5 p-3">
+       <div class="container text-bg-light">
         <div class="header ">
             <h1 class="text-center">
                 ABOUT <span style="color: blueviolet;">VTAPP</span>
@@ -284,6 +293,8 @@
             <p><b>Where: VIT-AP University, Amaravati, Andhra Pradesh</b></p>
         </div>
 
+
+       </div>
 
 
 
@@ -425,7 +436,7 @@
             <div class="col mt-5">
                 <div class="text-center">
                     <button class="btn text-light rounded-5 " style="background-color: blueviolet;">
-                       <a href="events.html" style="text-decoration: none;color: #fff;"> Explore Events</a>
+                        <a href="events.html" style="text-decoration: none;color: #fff;"> Explore Events</a>
 
 
                     </button>
@@ -440,14 +451,14 @@
 
 
     <div class="container-fluid text-dark bg-light mt-5">
-       
+
 
         <div class="row g-4">
             <div class="headinig text-center mt-3">
                 <h1>
                     <b>T-SHIRTS</b>
                 </h1>
-    
+
             </div>
 
             <div class="col-sm-1">
@@ -467,8 +478,9 @@
 
                     </div>
                     <div class="card-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+
 
                     </div>
                     <div class="card-footer text-center">
@@ -499,8 +511,10 @@
 
                     </div>
                     <div class="card-body">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vitae facere ducimus ut illo autem aliquam consequatur ratione magnam ex vel! Veniam deleniti ducimus, dolorum facilis corrupti iure? Sed, iste.
-                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vitae facere ducimus ut illo
+                        autem aliquam consequatur ratione magnam ex vel! Veniam deleniti ducimus, dolorum facilis
+                        corrupti iure? Sed, iste.
+
                     </div>
                     <div class="card-footer text-center">
                         <button class="btn btn-lg rounded-5 text-light " style="background-color: blueviolet;">
@@ -522,7 +536,7 @@
         </div>
 
     </div>
-    
+
 
 
     <div class="container-fluid text-light text-center mt-3">
